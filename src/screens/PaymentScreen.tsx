@@ -1,12 +1,14 @@
 import { View, Text, ScrollView } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
 const PaymentScreen = () => {
   const {top} = useSafeAreaInsets()
+
+  const [variable, setVariable] = useState(secondVariable)
   return (
     <ScrollView>
-      <Text>PaymentScreen</Text>
+      <Text>Pantalla de pagoi</Text>
     </ScrollView>
   )
 }
